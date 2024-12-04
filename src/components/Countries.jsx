@@ -24,7 +24,7 @@ export const Countries = () => {
         padding: 20,
       }}
     >
-      {countries.map((country, index) => (
+      {countries && countries.length && countries.map((country, index) => (
         <Country key={index} name={country.name} flag={country.flag} />
       ))}
     </div>
